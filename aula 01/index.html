@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <h1>Aprendendo React!</h1>
+    <p>Iremos aprender a utilizar o react! Passaremos a entender o porquê de usarmos o react, aprenderemos sobre JSX e também custom components e CSS com React.</p>
+    <p>Existem duas maneiras de configurar o react no seu projeto, iremos fazer as duas. Acessando essa <a href="https://reactjs.org/docs/cdn-links.html">página</a>, ela nos mostrará como adicionar o react ao nosso código.</p>
+    <img src="/imagens/cdn-links01.png" alt="">
+    <hr>
+    <p>E além disso, adicionaremos também o <strong>babel</strong></p>
+    <img src="/imagens/jsx01.png" alt="">
+    <hr>
+    <p>Após pegarmos os scripts, adicionamos eles à nsosa tag head:</p>
+    <img src="/imagens/head01.png" alt="">
+    <hr>
+    <p>Agora, estando tudo pronto, iremos escrever nosso primeiro código abaixo:</p>
+    <div id="root">teste</div>
+    <p>Nesse código usamos <strong>ReactDOM.render( &lt;h1&gt; Olá a todos!&lt;/h1&gt;, document.getElementById("root"))</strong> para alterar a &lt;div&gt; criada acima.</p>
+    <p>O <strong>ReactDOM</strong> é como se fosse um DOM do React, e o método <strong>render</strong> nos permite colocar alguma coisa dentro do nosso HTML. É como se fosse um .appendChild ou .append. Também usamos o document.getElementById() como seletor, mas funcionaria também um docuemnt.querySelector() normalmente.</p>
+
+    <script src="index.js" type="text/babel"></script>
+</body>
+</html>
