@@ -1,1 +1,0 @@
-ReactDOM.render(<ul><li>Primeiro item</li><li>Segundo item</li></ul>, document.getElementById("root"))
