@@ -1,4 +1,7 @@
+import './App.css'
 import React from "react";
+
+
 
 import Card from "./componentes/layout/Card";
 import Primeiro from "./componentes/basicos/Primeiro";
@@ -8,28 +11,26 @@ import NumAleatorio from "./componentes/basicos/NumAleatorio";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (_) => (
-  <div id="app">
+  <div className="App">
     <h1>Fundamentos React!</h1>
-
-    <Card titulo="#04 - Desafio Aleatório">
-      <NumAleatorio min={10} max={60} />
-    </Card>
-    <Card titulo="#03 - Fragmento">
-      <Fragmento />
-    </Card>
-    <Card titulo="#02 - Com Parâmetro">
-      <ComParametro
-        titulo="Situação do aluno:"
-        aluno="Pedro Silva"
-        nota={9.3}
-      />
-      <ComParametro 
-        titulo="Situação do aluno:" 
-        aluno="Maria" 
-        nota={6.7} />
-    </Card>
-    <Card titulo="#01 - Primeiro">
-      <Primeiro></Primeiro>
-    </Card>
+    <div className="Cards">
+      <Card titulo="#04 - Desafio Aleatório">
+        <NumAleatorio min={10} max={60} />
+      </Card>
+      <Card titulo="#03 - Fragmento">
+        <Fragmento />
+      </Card>
+      <Card titulo="#02 - Com Parâmetro">
+        <ComParametro
+          titulo="Situação do aluno:"
+          aluno="Pedro Silva"
+          nota={9.3}
+        />
+        <ComParametro titulo="Situação do aluno:" aluno="Maria" nota={6.7} />
+      </Card>
+      <Card titulo="#01 - Primeiro">
+        <Primeiro></Primeiro>
+      </Card>
+    </div>
   </div>
 );
