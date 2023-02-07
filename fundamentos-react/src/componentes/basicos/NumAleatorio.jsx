@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-anonymous-default-export
 export default (props) => {
   const aleatorio =
     parseInt(Math.random() * (props.max - props.min)) + props.min;
