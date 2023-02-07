@@ -1,7 +1,5 @@
-import './App.css'
+import "./App.css";
 import React from "react";
-
-
 
 import Card from "./componentes/layout/Card";
 import Primeiro from "./componentes/basicos/Primeiro";
@@ -9,7 +7,6 @@ import ComParametro from "./componentes/basicos/ComParametro";
 import Fragmento from "./componentes/basicos/Fragmento";
 import NumAleatorio from "./componentes/basicos/NumAleatorio";
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default (_) => (
   <div className="App">
     <h1>Fundamentos React!</h1>
