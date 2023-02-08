@@ -1,16 +1,22 @@
 import "./App.css";
 import React from "react";
 
+import Familia from "./componentes/basicos/Familia";
 import Card from "./componentes/layout/Card";
 import Primeiro from "./componentes/basicos/Primeiro";
 import ComParametro from "./componentes/basicos/ComParametro";
 import Fragmento from "./componentes/basicos/Fragmento";
 import NumAleatorio from "./componentes/basicos/NumAleatorio";
 
+
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (_) => (
   <div className="App">
     <h1>Fundamentos React!</h1>
     <div className="Cards">
+      <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
+        <Familia sobrenome="Ferreira"/>
+      </Card>
       <Card titulo="#04 - Desafio Aleatório" color="#FA6900">
         <NumAleatorio min={10} max={60} />
       </Card>
