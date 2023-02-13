@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 
+import ListaAlunos from "./componentes/repeticao/ListaAlunos";
 import Familia from "./componentes/basicos/Familia";
 import FamiliaMembro from "./componentes/basicos/FamiliaMembro";
 import Card from "./componentes/layout/Card";
@@ -9,11 +10,13 @@ import ComParametro from "./componentes/basicos/ComParametro";
 import Fragmento from "./componentes/basicos/Fragmento";
 import NumAleatorio from "./componentes/basicos/NumAleatorio";
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default (_) => (
   <div className="App">
     <h1>Fundamentos React!</h1>
     <div className="Cards">
+      <Card titulo="#06 - Repetição" color="#FF4C65">
+        <ListaAlunos></ListaAlunos>
+      </Card>
       <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
         <Familia sobrenome="Ferreira">
           <FamiliaMembro nome="Marcelo" />
