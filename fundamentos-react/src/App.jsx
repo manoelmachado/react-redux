@@ -17,7 +17,7 @@ export default (_) => (
     <h1>Fundamentos React!</h1>
     <div className="Cards">
       <Card titulo="#08 - Renderização condicional" color="#c1946a">
-        <ParOuImpar numero={20}></ParOuImpar>
+        <ParOuImpar numero={1}></ParOuImpar>
       </Card>
 
       <Card titulo="#07 - Exercício de repetição" color="#6b5b95">
