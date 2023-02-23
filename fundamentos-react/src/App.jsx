@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 
+import Contador from "./componentes/contador/Contador";
 import Input from "./componentes/formulario/Input";
 import IndiretaPai from "./componentes/comunicacao/IndiretaPai";
 import DiretaPai from "./componentes/comunicacao/DiretaPai";
@@ -20,6 +21,10 @@ export default (_) => (
   <div className="App">
     <h1>Fundamentos React!</h1>
     <div className="Cards">
+      <Card titulo="#12 - Contador" color="#83247b"> 
+        <Contador numeroInicial={10}/>
+      </Card>
+
       <Card titulo="#11 - Componente controlado (input)" color="#243283"> 
         <Input />
       </Card>
