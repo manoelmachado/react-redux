@@ -21,19 +21,19 @@ export default (_) => (
   <div className="App">
     <h1>Fundamentos React!</h1>
     <div className="Cards">
-      <Card titulo="#12 - Contador" color="#83247b"> 
-        <Contador numeroInicial={10}/>
+      <Card titulo="#12 - Contador" color="#83247b">
+        <Contador numeroInicial={10} />
       </Card>
 
-      <Card titulo="#11 - Componente controlado (input)" color="#243283"> 
+      <Card titulo="#11 - Componente controlado (input)" color="#243283">
         <Input />
       </Card>
 
-      <Card titulo="#10 - Comunicação indireta" color="#80d687"> 
+      <Card titulo="#10 - Comunicação indireta" color="#80d687">
         <IndiretaPai />
       </Card>
 
-      <Card titulo="#09 - Comunicação direta" color="#80ced6"> 
+      <Card titulo="#09 - Comunicação direta" color="#80ced6">
         <DiretaPai />
       </Card>
 
