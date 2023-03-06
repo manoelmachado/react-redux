@@ -8,7 +8,7 @@ const Menu = (props) => (
     <nav>
       <ul>
         <li>
-            <Link to="/Home">Início</Link>
+            <Link to="/">Início</Link>
         </li>
         <li>
             <Link to="/Param/123">Param #01</Link>
@@ -18,6 +18,9 @@ const Menu = (props) => (
         </li>
         <li>
             <Link to="/About">Sobre</Link>
+        </li>
+        <li>
+            <Link to="/naoExiste">Não Existe</Link>
         </li>
       </ul>
     </nav>

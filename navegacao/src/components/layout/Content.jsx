@@ -9,9 +9,10 @@ import Param from "../../views/examples/Param";
 const Content = (props) => 
     <main className="Content">
         <Routes>
+            <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/home" element={<Home />} />
             <Route path="/param/:id" element={<Param />} />
+            
         </Routes>
     </main>;
 
