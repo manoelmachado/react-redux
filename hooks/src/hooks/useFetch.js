@@ -13,7 +13,7 @@ export const useFetch = (url, method = 'get') => {
                 data: json,
                 loading: false
             }))
-    }, [url, method])
+    }, [url, method]) 
 
     return response
 }
