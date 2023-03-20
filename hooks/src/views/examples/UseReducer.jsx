@@ -1,31 +1,8 @@
 import React, { useReducer } from "react";
 import PageTitle from "../../components/layout/PageTitle";
 
-const initialState = {
-  cart: [],
-  products: [],
-  user: null,
-  number: 0,
-};
-
-function reducer(state, action) {
-  switch (action.type) {
-    case "add2":
-      return { ...state, number: state.number + 2 };
-    case "login":
-      return { ...state, user: { name: action.payload } };
-    case "vezes7":
-      return { ...state, number: state.number * 7 };
-    case "divide25":
-      return { ...state, number: state.number / 25 };
-    case "round":
-      return { ...state, number: parseInt(state.number) };
-    case "addN":
-      return { ...state, number: state.number + action.payload };
-    default:
-      return state;
-  }
-}
+import { initialState, reducer } from '../../store/index'
+import { add2, login } from "../../store/actions";
 
 const UseReducer = (props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -48,11 +25,11 @@ const UseReducer = (props) => {
         <div>
           <button
             className="btn"
-            onClick={() => dispatch({ type: "login", payload: "manoel" })}
+            onClick={() => login(dispatch, 'manoel')}
           >
             Login
           </button>
-          <button className="btn" onClick={() => dispatch({ type: "add2" })}>
+          <button className="btn" onClick={() => add2(dispatch)}>
             +2
           </button>
           <button className="btn" onClick={() => dispatch({ type: "vezes7" })}>
