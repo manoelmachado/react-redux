@@ -9,12 +9,14 @@ export default function Inicio() {
         alignItems: "center",
         height: "100vh",
         flexWrap: "wrap",
-      }}>
+      }}
+    >
       <Navegador texto="Estilo" destino="/estilo" />
       <Navegador texto="Exemplo" destino="/exemplo" cor="#9400d3" />
-      <Navegador texto="JSX" destino="/jsx" cor="crimson"/>
-      <Navegador texto="Navegação #01" destino="/navegacao" cor="green"/>
+      <Navegador texto="JSX" destino="/jsx" cor="crimson" />
+      <Navegador texto="Navegação #01" destino="/navegacao" cor="green" />
       <Navegador texto="Navegação #02" destino="/cliente/sp-02/321" cor="blue"/>
+      <Navegador texto="Componente com Estado" destino="/estado" cor="gray" />
     </div>
   );
 }
