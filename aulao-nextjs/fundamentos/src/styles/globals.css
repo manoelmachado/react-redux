@@ -110,3 +110,7 @@ a {
   background-color: #892be259;
   color: white;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
