@@ -1,8 +1,7 @@
 import styles from "../styles/estilo.module.css";
 import Layout from "../components/Layout";
-import Link from "next/link";
 
-export default (props) => {
+export default function Estilo() {
   return (
     <Layout titulo="Exemplo de CSS Modularizado">
       <div className={styles.roxo}>
