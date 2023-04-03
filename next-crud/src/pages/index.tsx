@@ -12,11 +12,10 @@ export default function Home() {
   ]
 
   return (
-    <div
-      className={`
+    <div className={`
       flex justify-center items-center h-screen
       bg-gradient-to-r from-blue-500 to-purple-500
-      bg-white
+      rounded-md
     `}>
       <Layout titulo="Cadastro simples">
         <Tabela clientes={clientes}></Tabela>
